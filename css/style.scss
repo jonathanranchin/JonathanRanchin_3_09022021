@@ -91,8 +91,11 @@ header div {
 #restaurants {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: center ;
     background-color: rgb(246, 246, 246);
+}
+#restaurants h2 {
+ margin-left: -188px;
 }
 #restaurants article {
         box-shadow: 0 0 20px #0000002e;
@@ -112,7 +115,7 @@ img {
     background-color: rgb(153, 226, 208);
     color: rgb(30, 153, 123);
     text-align: center;
-    width: 65px;
+    width: 68px;
     margin: -185px 0px 200px 235px;
     position: absolute;
     z-index: 10;
@@ -145,8 +148,8 @@ footer {
     background-color: rgb(53, 53, 53);
 }
 footer img {
+    margin-top: 10px;
     color: white;
-    margin: 20px 0px 10px 20px;
     object-fit: contain;
     width: 100px;
     height: 20px;
@@ -154,4 +157,42 @@ footer img {
 footer div {
     margin: 10px 0px 10px 20px;
     color: white;
+}
+@media screen and (min-width: 481px) {
+    header div {
+        height: 50px;
+    }
+    #operations {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    #operations h2,
+    #operations p {
+        margin-right: 15px; 
+    }
+    #restaurants {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    #restaurants h2 {
+        width: 100%;
+        margin-left: 27px;
+    }
+    footer {
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+    } 
+    footer img {
+        width: 100px;
+        height: 25px;
+        margin-bottom: -8px;
+    }
+    footer div {
+        margin: 10px 20px 20px 20px;
+    }
 }
