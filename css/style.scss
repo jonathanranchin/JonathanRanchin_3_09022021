@@ -1,17 +1,157 @@
-
+html {
+    font-family: 'Roboto', sans-serif;
+}
 body {
+    margin: 0px;
     width: 100%;
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: stretch;
 }
-section article {
-    width: 98%;
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    width: 100%;
 }
-img {
-    width: 310px;
+#header-image {
+    width: 200px;
+    height: 65px;
+    border-bottom: 2px rgb(215, 215, 215) solid;
+    display: block;
+    padding: 0.25rem 5.45rem;
+    margin-left: auto;
+    margin-right: auto;
     object-fit: contain;
+    border-radius: 0px; 
+}
+header div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    text-align: center; 
+    height: 65px;
+    width: 100%;
+    background-color: rgb(234, 234, 234);
+}
+.fa-map-marker-alt {
+    margin: 20px 10px 20px -20px;
+}
+#reservation {
+    background-color: rgb(246, 246, 246);
+    margin-left: auto;
+    margin-right: auto;   
+    text-align: center;
+}
+#reservation h2, *
+#reservation p {
+    padding: 0px 20% 0px 20%;
+    margin-top: 0px;
+}
+#reservation button {
+    border-radius: 55px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(225, 112, 218);
+    border: 0px transparent;
+    color: white;
+}
+#operations {
+    margin: 10px;
+}
+#operations p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    background-color: rgb(246,246,246);
+    border-radius: 55px;
+    height: 55px;
+    width: 280px;
+    &:hover  {
+        i {
+        transition: background-color 0.5s ease;
+        color: rgb(147, 86, 220);    
+        }
+        }
+}
+#operations p:hover {
+    background-color: rgb(245, 237, 255);
 }
 .highlighted-number {
-    
+    padding: 3px 8px 3px 8px;
+    margin: 0px 10px 0px -3px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(147, 86, 220);
+}
+#operations i {
+    color: rgb(126, 126, 126);
+    margin: 0px 10px 0px 0px;  
+} 
+#restaurants {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+}
+#restaurants article {
+        box-shadow: 0 0 20px #0000002e;
+    background-color: white;
+    border-radius: 15px;
+    margin: 2%;
+    padding: 5px;
+}
+img {
+    margin: -4px;
+    border-radius: 15px;
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+}
+.new {
+    background-color: rgb(153, 226, 208);
+    color: rgb(30, 153, 123);
+    text-align: center;
+    width: 65px;
+    margin: -185px 0px 200px 235px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 3px;
+}
+.new p {
+    margin: 0px;
+    padding: 3px;
+}
+h3 {
+    margin: 2px;
+}
+article div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+article i {
+    margin: 15px 10px 5px 0px;
+    color:  rgb(82, 82, 82);
+}
+#restaurants i:hover {
+    color: rgb(147, 86, 220);
+}
+.fa-heart:active {
+    color: rgb(147, 86, 220);
+}
+footer {
+    margin-top: 5.7%;
+    background-color: rgb(53, 53, 53);
+}
+footer img {
+    color: white;
+    margin: 20px 0px 10px 20px;
+    object-fit: contain;
+    width: 100px;
+    height: 20px;
+}
+footer div {
+    margin: 10px 0px 10px 20px;
+    color: white;
 }

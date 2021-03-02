@@ -1,4 +1,9 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
 body {
+  margin: 0px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7,18 +12,212 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  width: 100%;
+}
+
+#header-image {
+  width: 200px;
+  height: 65px;
+  border-bottom: 2px #d7d7d7 solid;
+  display: block;
+  padding: 0.25rem 5.45rem;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 0px;
+}
+
+header div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  text-align: center;
+  height: 65px;
+  width: 100%;
+  background-color: #eaeaea;
+}
+
+.fa-map-marker-alt {
+  margin: 20px 10px 20px -20px;
+}
+
+#reservation {
+  background-color: #f6f6f6;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#reservation h2, *
+#reservation p {
+  padding: 0px 20% 0px 20%;
+  margin-top: 0px;
+}
+
+#reservation button {
+  border-radius: 55px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #e170da;
+  border: 0px transparent;
+  color: white;
+}
+
+#operations {
+  margin: 10px;
+}
+
+#operations p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 55px;
+  height: 55px;
+  width: 280px;
 }
 
-section article {
-  width: 98%;
+#operations p:hover i {
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  color: #9356dc;
+}
+
+#operations p:hover {
+  background-color: #f5edff;
+}
+
+.highlighted-number {
+  padding: 3px 8px 3px 8px;
+  margin: 0px 10px 0px -3px;
+  color: white;
+  border-radius: 50px;
+  background-color: #9356dc;
+}
+
+#operations i {
+  color: #7e7e7e;
+  margin: 0px 10px 0px 0px;
+}
+
+#restaurants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+}
+
+#restaurants article {
+  -webkit-box-shadow: 0 0 20px #0000002e;
+          box-shadow: 0 0 20px #0000002e;
+  background-color: white;
+  border-radius: 15px;
+  margin: 2%;
+  padding: 5px;
 }
 
 img {
-  width: 310px;
+  margin: -4px;
+  border-radius: 15px;
+  width: 320px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.new {
+  background-color: #99e2d0;
+  color: #1e997b;
+  text-align: center;
+  width: 65px;
+  margin: -185px 0px 200px 235px;
+  position: absolute;
+  z-index: 10;
+  border-radius: 3px;
+}
+
+.new p {
+  margin: 0px;
+  padding: 3px;
+}
+
+h3 {
+  margin: 2px;
+}
+
+article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article i {
+  margin: 15px 10px 5px 0px;
+  color: #525252;
+}
+
+#restaurants i:hover {
+  color: #9356dc;
+}
+
+.fa-heart:active {
+  color: #9356dc;
+}
+
+footer {
+  margin-top: 5.7%;
+  background-color: #353535;
+}
+
+footer img {
+  color: white;
+  margin: 20px 0px 10px 20px;
   -o-object-fit: contain;
      object-fit: contain;
+  width: 100px;
+  height: 20px;
+}
+
+footer div {
+  margin: 10px 0px 10px 20px;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
