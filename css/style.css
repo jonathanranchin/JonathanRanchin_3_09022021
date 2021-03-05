@@ -49,7 +49,6 @@ header div {
   margin-right: auto;
   width: 8em;
   text-align: center;
-  height: 65px;
   width: 100%;
   background-color: #eaeaea;
 }
@@ -71,7 +70,8 @@ header div {
   margin-top: 0px;
 }
 
-#reservation button {
+#reservation button,
+#command button {
   border-radius: 55px;
   padding: 15px;
   margin-bottom: 15px;
@@ -80,7 +80,24 @@ header div {
   color: white;
 }
 
-#reservation button:hover {
+#command {
+  background-color: #f6f6f6;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 0px;
+}
+
+#reservation button:hover,
+#command button:hover {
   background-color: #f0b7ec;
 }
 
@@ -180,7 +197,8 @@ img {
   padding: 3px;
 }
 
-h3 {
+h3,
+h4 {
   margin: 2px;
 }
 
@@ -253,6 +271,27 @@ footer div {
   z-index: 1;
 }
 
+#restaurants-section section:hover {
+  left: 4px;
+}
+
+#restaurants-section h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#restaurants-section h2 i {
+  margin: 0px 8px 0px 0px;
+}
+
 #restaurants-section div {
   background-color: white;
   -webkit-box-shadow: 0 0 20px #0000002e;
@@ -273,6 +312,34 @@ footer div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+#restaurants-section h3 {
+  width: 45px;
+  height: 25px;
+}
+
+h3 span {
+  color: transparent;
+}
+
+#restaurants-section h3::after {
+  content: "____";
+  border-bottom: 2px solid #99e2d0;
+  color: transparent;
+  margin: 0px 0px 0px -90px;
+}
+
+#restaurants-section p {
+  margin: 3px;
+}
+
+#restaurants-section strong {
+  margin-right: 8px;
+}
+
+#footer-restaurants {
+  margin: 0px;
 }
 
 @media screen and (min-width: 481px) {
@@ -325,6 +392,9 @@ footer div {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   footer img {
     width: 100px;
@@ -341,6 +411,25 @@ footer div {
     -o-object-fit: cover;
        object-fit: cover;
     height: 400px;
+  }
+  #restaurants-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  #restaurants-section h2 {
+    width: 100%;
+  }
+  #restaurants-section section {
+    width: 31%;
+    margin: 0.75%;
+  }
+  #footer-restaurants {
+    margin-top: -14px;
   }
 }
 /*# sourceMappingURL=style.css.map */
