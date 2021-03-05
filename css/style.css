@@ -31,7 +31,7 @@ header {
   width: 100%;
 }
 
-#header-image {
+.header-image {
   width: 200px;
   height: 65px;
   border-bottom: 2px #d7d7d7 solid;
@@ -65,7 +65,7 @@ header div {
   text-align: center;
 }
 
-#reservation h2, *
+#reservation h2,
 #reservation p {
   padding: 0px 20% 0px 20%;
   margin-top: 0px;
@@ -78,6 +78,10 @@ header div {
   background-color: #e170da;
   border: 0px transparent;
   color: white;
+}
+
+#reservation button:hover {
+  background-color: #f0b7ec;
 }
 
 #operations {
@@ -225,6 +229,52 @@ footer div {
   color: white;
 }
 
+.fa-arrow-left {
+  margin: 43px 1px 0px 10px;
+}
+
+#header-image-restaurants {
+  margin: -44px 0px 2px 0px;
+  border-bottom: transparent;
+}
+
+#top-image {
+  border-radius: 0px;
+  width: 100%;
+  height: 250px;
+  margin: -2px 0px 0px 0px;
+}
+
+#restaurants-section {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  padding: 0.5rem;
+  background-color: #f6f6f6;
+  z-index: 1;
+}
+
+#restaurants-section div {
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px #0000002e;
+          box-shadow: 0 0 20px #0000002e;
+  border-radius: .75rem;
+  padding: 0.25rem;
+  margin: 1rem 0;
+}
+
+#restaurants-section p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (min-width: 481px) {
   header div {
     height: 50px;
@@ -283,6 +333,14 @@ footer div {
   }
   footer div {
     margin: 10px 20px 20px 20px;
+  }
+  #header-image-restaurants {
+    margin: -44px auto 2px auto;
+  }
+  #top-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
   }
 }
 /*# sourceMappingURL=style.css.map */
