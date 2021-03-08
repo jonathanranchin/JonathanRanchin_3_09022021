@@ -107,7 +107,7 @@ header div {
     background-color: rgb(246, 246, 246);
 }
 #restaurants h2 {
- margin-left: -188px;
+    margin-left: -188px;
 }
 #restaurants article {
     box-shadow: 0 0 20px #0000002e;
@@ -195,6 +195,8 @@ footer div {
     left:4px ;
 }
 #restaurants-section h2 {
+    font-family: 'Shrikhand';
+    font-size: 2rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -235,6 +237,9 @@ h3 span {
 }
 #footer-restaurants {
     margin: 0px;
+}
+#footer-restaurants-long {
+    margin-top: 2px;
 }
 @media screen and (min-width: 481px) {
     header div {
@@ -292,7 +297,7 @@ h3 span {
         width: 31%;
         margin: 0.75%;
     }
-    #footer-restaurants {
+    #footer-restaurants-long {
         margin-top: -14px;
     }
 }

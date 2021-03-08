@@ -276,6 +276,8 @@ footer div {
 }
 
 #restaurants-section h2 {
+  font-family: 'Shrikhand';
+  font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,6 +342,10 @@ h3 span {
 
 #footer-restaurants {
   margin: 0px;
+}
+
+#footer-restaurants-long {
+  margin-top: 2px;
 }
 
 @media screen and (min-width: 481px) {
@@ -428,7 +434,7 @@ h3 span {
     width: 31%;
     margin: 0.75%;
   }
-  #footer-restaurants {
+  #footer-restaurants-long {
     margin-top: -14px;
   }
 }
