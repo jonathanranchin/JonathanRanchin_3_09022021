@@ -1,0 +1,60 @@
+@media screen and (min-width: 481px) {
+    header div {
+        height: 50px;
+    }
+    #operations {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+    #operations h2,
+    #operations p {
+        margin-right: 15px; 
+    }
+    #restaurants {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    #restaurants h2 {
+        width: 100%;
+        margin-left: 27px;
+    }
+    footer {
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: space-evenly;
+    } 
+    footer img {
+        width: 100px;
+        height: 25px;
+        margin-bottom: -8px;
+    }
+    footer div {
+        margin: 10px 20px 20px 20px;
+    }
+    #header-image-restaurants {
+        margin: -44px auto 2px auto;
+    }
+    #top-image {
+        object-fit: cover;
+        height:400px
+    }
+    #restaurants-section {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #restaurants-section h2 {
+        width: 100%;
+    }
+    #restaurants-section section {
+        width: 31%;
+        margin: 0.75%;
+    }
+    #footer-restaurants-long {
+        margin-top: -14px;
+    }
+}

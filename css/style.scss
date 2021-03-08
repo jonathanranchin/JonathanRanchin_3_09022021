@@ -1,23 +1,10 @@
-html {
-    font-family: 'Roboto', sans-serif;
-}
-body {
-    margin: 0px;
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: stretch;
-}
-header {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-    width: 100%;
-}
+@import "colors";
+@import "general";
 .header-image {
+    margin: 0px;
     width: 200px;
     height: 65px;
-    border-bottom: 2px rgb(215, 215, 215) solid;
+    border-bottom: 2px $darkest-indexheader-grey solid;
     display: block;
     padding: 0.25rem 5.45rem;
     margin-left: auto;
@@ -31,13 +18,13 @@ header div {
     width: 8em;
     text-align: center; 
     width: 100%;
-    background-color: rgb(234, 234, 234);
+    background-color: $light-indexheader-div;
 }
 .fa-map-marker-alt {
     margin: 20px 10px 20px -20px;
 }
 #reservation {
-    background-color: rgb(246, 246, 246);
+    background-color: $standard-light-grey;
     margin-left: auto;
     margin-right: auto;   
     text-align: center;
@@ -52,12 +39,12 @@ header div {
     border-radius: 55px;
     padding: 15px;
     margin-bottom: 15px;
-    background-color: rgb(225, 112, 218);
+    background-color: $seconary;
     border: 0px transparent;
     color: white;
 }
 #command {
-    background-color: rgb(246, 246, 246);
+    background-color: $standard-light-grey;
     min-width: 100%;
     display: flex;
     flex-flow: wrap row;
@@ -66,7 +53,7 @@ header div {
 }
 #reservation button:hover,
 #command button:hover {
-    background-color: rgb(240, 183, 236);
+    background-color: $light-secondary;
 }
 #operations {
     margin: 10px;
@@ -75,14 +62,14 @@ header div {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background-color: rgb(246,246,246);
+    background-color: $standard-light-grey;
     border-radius: 55px;
     height: 55px;
     width: 280px;
     &:hover  {
         i {
         transition: background-color 0.5s ease;
-        color: rgb(147, 86, 220);    
+        color: $primary;    
         }
         }
 }
@@ -94,34 +81,27 @@ header div {
     margin: 0px 10px 0px -3px;
     color: white;
     border-radius: 50px;
-    background-color: rgb(147, 86, 220);
+    background-color: $primary;
 }
 #operations i {
-    color: rgb(126, 126, 126);
+    color: $logo-passive;
     margin: 0px 10px 0px 0px;  
 } 
 #restaurants {
     display: flex;
     flex-flow: column nowrap;
     align-items: center ;
-    background-color: rgb(246, 246, 246);
+    background-color: $standard-light-grey;
 }
 #restaurants h2 {
     margin-left: -188px;
 }
 #restaurants article {
-    box-shadow: 0 0 20px #0000002e;
+    box-shadow: 0 0 20px $standard-box-shadow;
     background-color: white;
     border-radius: 15px;
     margin: 2%;
     padding: 5px;
-}
-img {
-    margin: -4px;
-    border-radius: 15px;
-    width: 320px;
-    height: 200px;
-    object-fit: cover;
 }
 .new {
     background-color: rgb(153, 226, 208);
@@ -137,10 +117,6 @@ img {
     margin: 0px;
     padding: 3px;
 }
-h3, 
-h4 {
-    margin: 2px;
-}
 article div {
     display: flex;
     flex-flow: row nowrap;
@@ -151,14 +127,10 @@ article i {
     color:  rgb(82, 82, 82);
 }
 #restaurants i:hover {
-    color: rgb(147, 86, 220);
+    color: $primary;
 }
 .fa-heart:active {
-    color: rgb(147, 86, 220);
-}
-footer {
-    margin-top: 5.7%;
-    background-color: rgb(53, 53, 53);
+    color: $primary;
 }
 footer img {
     margin-top: 10px;
@@ -206,7 +178,7 @@ footer div {
 }
 #restaurants-section div {
     background-color: white;
-    box-shadow: 0 0 20px #0000002e;
+    box-shadow: 0 0 20px $standard-box-shadow;
     border-radius: .75rem;
     padding: 0.25rem;
     margin: 1rem 0;
@@ -220,12 +192,9 @@ footer div {
     width: 45px;
     height: 25px;
 }
-h3 span {
-    color: transparent;
-}
 #restaurants-section h3::after {
     content: "____";
-    border-bottom: 2px solid #99e2d0;
+    border-bottom: 2px solid $tertiary;
     color:transparent;
     margin: 0px 0px 0px -90px;
 }
@@ -241,63 +210,6 @@ h3 span {
 #footer-restaurants-long {
     margin-top: 2px;
 }
-@media screen and (min-width: 481px) {
-    header div {
-        height: 50px;
-    }
-    #operations {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: baseline;
-        justify-content: space-around;
-    }
-    #operations h2,
-    #operations p {
-        margin-right: 15px; 
-    }
-    #restaurants {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-    }
-    #restaurants h2 {
-        width: 100%;
-        margin-left: 27px;
-    }
-    footer {
-        margin-top: 0px;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: baseline;
-        justify-content: space-evenly;
-    } 
-    footer img {
-        width: 100px;
-        height: 25px;
-        margin-bottom: -8px;
-    }
-    footer div {
-        margin: 10px 20px 20px 20px;
-    }
-    #header-image-restaurants {
-        margin: -44px auto 2px auto;
-    }
-    #top-image {
-        object-fit: cover;
-        height:400px
-    }
-    #restaurants-section {
-        display: flex;
-        flex-flow: row wrap;
-    }
-    #restaurants-section h2 {
-        width: 100%;
-    }
-    #restaurants-section section {
-        width: 31%;
-        margin: 0.75%;
-    }
-    #footer-restaurants-long {
-        margin-top: -14px;
-    }
+h3 span {
+    color: transparent;
 }

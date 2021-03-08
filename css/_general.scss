@@ -1,0 +1,31 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+}
+header {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    width: 100%;
+}
+img {
+    margin: -4px;
+    border-radius: 15px;
+    width: 320px;
+    height: 200px;
+    object-fit: cover;
+}
+h3, 
+h4 {
+    margin: 2px;
+}
+footer {
+    margin-top: 5.7%;
+    background-color: $footer-background-color;
+}
