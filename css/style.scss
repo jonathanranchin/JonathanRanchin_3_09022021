@@ -1,5 +1,6 @@
 @import "colors";
 @import "general";
+@import "restaurant-section";
 .header-image {
     margin: 0px;
     width: 200px;
@@ -12,14 +13,6 @@
     object-fit: contain;
     border-radius: 0px; 
 }
-header div {
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-    text-align: center; 
-    width: 100%;
-    background-color: $light-indexheader-div;
-}
 .fa-map-marker-alt {
     margin: 20px 10px 20px -20px;
 }
@@ -28,20 +21,11 @@ header div {
     margin-left: auto;
     margin-right: auto;   
     text-align: center;
+    h2, 
+    p {
+        padding: 0px 20% 0px 20%;
+        margin-top: 0px;
 }
-#reservation h2, 
-#reservation p {
-    padding: 0px 20% 0px 20%;
-    margin-top: 0px;
-}
-#reservation button,
-#command button {
-    border-radius: 55px;
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: $seconary;
-    border: 0px transparent;
-    color: white;
 }
 #command {
     background-color: $standard-light-grey;
@@ -51,57 +35,84 @@ header div {
     justify-content: center;
     padding-bottom: 0px;
 }
+#reservation button,
+#command button {
+    border-radius: 55px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: $secondary;
+    background: linear-gradient($secondary,$primary);
+    border: 0px transparent;
+    color: white;
+    box-shadow: $standard-box-shadow;
+}
 #reservation button:hover,
 #command button:hover {
     background-color: $light-secondary;
 }
 #operations {
     margin: 10px;
+    p {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        background-color: $standard-light-grey;
+        border-radius: 20px;
+        height: 65px;
+        width: 98%;
+        margin-left: 1%;
+        box-shadow: 0 0 5px 5px $standard-box-shadow;
+        &:hover  {
+            i {
+            transition: background-color 0.5s ease;
+            color: $primary;    
+            }
+            }
+    }
+    p:hover {
+        background-color: rgb(245, 237, 255);
+    }
+    i {
+        color: $logo-passive;
+        margin: 0px 10px 0px 0px;  
+    } 
 }
-#operations p {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    background-color: $standard-light-grey;
-    border-radius: 55px;
-    height: 55px;
-    width: 280px;
-    &:hover  {
-        i {
-        transition: background-color 0.5s ease;
-        color: $primary;    
-        }
-        }
-}
-#operations p:hover {
-    background-color: rgb(245, 237, 255);
-}
+
 .highlighted-number {
     padding: 3px 8px 3px 8px;
-    margin: 0px 10px 0px -3px;
+    margin: 0px 10px 0px -10px;
     color: white;
     border-radius: 50px;
     background-color: $primary;
 }
-#operations i {
-    color: $logo-passive;
-    margin: 0px 10px 0px 0px;  
-} 
 #restaurants {
     display: flex;
     flex-flow: column nowrap;
     align-items: center ;
     background-color: $standard-light-grey;
-}
-#restaurants h2 {
-    margin-left: -188px;
-}
-#restaurants article {
-    box-shadow: 0 0 20px $standard-box-shadow;
-    background-color: white;
-    border-radius: 15px;
-    margin: 2%;
-    padding: 5px;
+    h2 {
+        margin-left: -188px;
+    }
+    article {
+        box-shadow: 0 0 20px $standard-box-shadow;
+        background-color: white;
+        border-radius: 15px;
+        margin: 2%;
+        padding: 5px;
+        div {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        i {
+            margin: 15px 10px 5px 0px;
+            color:  rgb(82, 82, 82);
+        }
+    }
+    i:hover {
+        opacity: 1;
+        color: $primary;
+    }
 }
 .new {
     background-color: rgb(153, 226, 208);
@@ -112,42 +123,23 @@ header div {
     position: absolute;
     z-index: 10;
     border-radius: 3px;
-}
-.new p {
-    margin: 0px;
-    padding: 3px;
-}
-article div {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-article i {
-    margin: 15px 10px 5px 0px;
-    color:  rgb(82, 82, 82);
-}
-#restaurants i:hover {
-    color: $primary;
+    p {
+        margin: 0px;
+        padding: 3px;
+    }
 }
 .fa-heart:active {
     color: $primary;
 }
-footer img {
-    margin-top: 10px;
-    color: white;
-    object-fit: contain;
-    width: 100px;
-    height: 20px;
-}
-footer div {
-    margin: 10px 0px 10px 20px;
-    color: white;
-}
 .fa-arrow-left {
-    margin: 43px 1px 0px 10px;
+    height: 20px;
+    width: 20px;
+    padding: 43px 10px 24px 10px;
+    z-index: 10;
 }
 #header-image-restaurants {
-    margin: -44px 0px 2px 0px;
+    z-index:-1;
+    margin: -75px 0px 0px 0px;
     border-bottom: transparent;
 }
 #top-image {
@@ -155,54 +147,6 @@ footer div {
     width: 100%;
     height: 250px;
     margin:-2px 0px 0px 0px;    
-}
-#restaurants-section {
-    margin-top: -4rem;
-    border-radius: 2rem 2rem 0 0;
-    padding: 0.5rem;
-    background-color: #f6f6f6;
-    z-index: 1;
-}
-#restaurants-section section:hover {
-    left:4px ;
-}
-#restaurants-section h2 {
-    font-family: 'Shrikhand';
-    font-size: 2rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-#restaurants-section h2 i {
-    margin: 0px 8px 0px 0px;
-}
-#restaurants-section div {
-    background-color: white;
-    box-shadow: 0 0 20px $standard-box-shadow;
-    border-radius: .75rem;
-    padding: 0.25rem;
-    margin: 1rem 0;
-}
-#restaurants-section p {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-#restaurants-section h3{
-    width: 45px;
-    height: 25px;
-}
-#restaurants-section h3::after {
-    content: "____";
-    border-bottom: 2px solid $tertiary;
-    color:transparent;
-    margin: 0px 0px 0px -90px;
-}
-#restaurants-section p {
-    margin: 3px;
-}
-#restaurants-section strong {
-    margin-right: 8px;
 }
 #footer-restaurants {
     margin: 0px;
@@ -213,3 +157,52 @@ footer div {
 h3 span {
     color: transparent;
 }
+
+.container-div {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: none;
+    display: flex; 
+  }
+  .section {
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+    height: auto;
+    flex: 3;
+  }
+  .section.slide {
+    flex: 0;
+    position:relative;
+    background:$tertiary;
+    border-radius: 0 .75rem .75rem  0px;
+  }
+  .container-div:hover .section.slide {
+    flex: 1;
+  }
+  .text-holder {
+    p {
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-between;
+      }
+  }
+  .slide:after {
+      color:#fff;
+      content:"\f058";
+      font-family: "Font Awesome 5 Free";
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      overflow: hidden;
+      position:absolute;
+      width:16px;
+      height:18px;
+      display:block;
+      animation:spin 0.8s ease-in-out;
+  }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+}
+
+@import "desktop";

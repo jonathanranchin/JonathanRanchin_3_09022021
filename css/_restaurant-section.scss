@@ -1,0 +1,49 @@
+#restaurants-section {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    padding: 0.5rem;
+    background-color: #f6f6f6;
+    z-index: 1;
+    section:hover {
+        left:4px ;
+    }
+    h2 {
+        font-family: 'Shrikhand';
+        font-size: 2rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    h2 i {
+        margin: 0px 8px 0px 0px;
+    }
+    .container-div {
+        background-color: white;
+        box-shadow: 0 0 20px $standard-box-shadow;
+        border-radius: .75rem;
+        height: 60px;
+        margin: 1rem 0;
+    }
+    .text-holder {
+        padding: 8px 3px 3px 4px;
+    }
+    p {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+    h3 {
+        width: 40px;
+        height: 22px;
+        border-bottom: 2px solid $tertiary;
+    }
+    #text {
+        width: 0px;
+    }
+    p {
+        margin: 3px;
+    }
+    strong {
+        margin-right: 8px;
+    }
+}

@@ -13,6 +13,14 @@ header {
     flex-flow: column nowrap;
     align-items: stretch;
     width: 100%;
+    div {
+        margin-left: auto;
+        margin-right: auto;
+        width: 8em;
+        text-align: center; 
+        width: 100%;
+        background-color: $light-indexheader-grey;
+    }
 }
 img {
     margin: -4px;
@@ -25,7 +33,29 @@ h3,
 h4 {
     margin: 2px;
 }
+a {
+    text-decoration: none;
+    color: inherit;
+  }
 footer {
     margin-top: 5.7%;
     background-color: $footer-background-color;
+    img {
+        margin-top: 10px;
+        color: white;
+        object-fit: contain;
+        width: 100px;
+        height: 20px;
+    }
+    div {
+        margin: 10px 0px 10px 20px;
+        color: white;
+    }
+    @media screen and (min-width: 481px) {
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: space-evenly;
+    }
 }
