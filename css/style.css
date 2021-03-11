@@ -97,81 +97,6 @@ footer div {
   }
 }
 
-#restaurants-section {
-  margin-top: -4rem;
-  border-radius: 2rem 2rem 0 0;
-  padding: 0.5rem;
-  background-color: #f6f6f6;
-  z-index: 1;
-}
-
-#restaurants-section section:hover {
-  left: 4px;
-}
-
-#restaurants-section h2 {
-  font-family: 'Shrikhand';
-  font-size: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#restaurants-section h2 i {
-  margin: 0px 8px 0px 0px;
-}
-
-#restaurants-section .container-div {
-  background-color: white;
-  -webkit-box-shadow: 0 0 20px #0000002e;
-          box-shadow: 0 0 20px #0000002e;
-  border-radius: .75rem;
-  height: 60px;
-  margin: 1rem 0;
-}
-
-#restaurants-section .text-holder {
-  padding: 8px 3px 3px 4px;
-}
-
-#restaurants-section p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#restaurants-section h3 {
-  width: 40px;
-  height: 22px;
-  border-bottom: 2px solid #99E2D0;
-}
-
-#restaurants-section #text {
-  width: 0px;
-}
-
-#restaurants-section p {
-  margin: 3px;
-}
-
-#restaurants-section strong {
-  margin-right: 8px;
-}
-
 .header-image {
   margin: 0px;
   width: 200px;
@@ -362,6 +287,10 @@ footer div {
   z-index: 10;
 }
 
+h3 span {
+  color: transparent;
+}
+
 #header-image-restaurants {
   z-index: -1;
   margin: -75px 0px 0px 0px;
@@ -375,16 +304,79 @@ footer div {
   margin: -2px 0px 0px 0px;
 }
 
-#footer-restaurants {
-  margin: 0px;
+#restaurants-section {
+  margin-top: -4rem;
+  border-radius: 2rem 2rem 0 0;
+  padding: 0.5rem;
+  background-color: #f6f6f6;
+  z-index: 1;
 }
 
-#footer-restaurants-long {
-  margin-top: 2px;
+#restaurants-section section:hover {
+  left: 4px;
 }
 
-h3 span {
-  color: transparent;
+#restaurants-section h2 {
+  font-family: 'Shrikhand';
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#restaurants-section h2 i {
+  margin: 0px 8px 0px 0px;
+}
+
+#restaurants-section .container-div {
+  background-color: white;
+  -webkit-box-shadow: 0 0 20px #0000002e;
+          box-shadow: 0 0 20px #0000002e;
+  border-radius: .75rem;
+  height: 60px;
+  margin: 1rem 0;
+}
+
+#restaurants-section .text-holder {
+  padding: 8px 3px 3px 4px;
+}
+
+#restaurants-section p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#restaurants-section h3 {
+  width: 40px;
+  height: 22px;
+  border-bottom: 2px solid #99E2D0;
+}
+
+#restaurants-section #text {
+  width: 0px;
+}
+
+#restaurants-section p {
+  margin: 3px;
+}
+
+#restaurants-section strong {
+  margin-right: 8px;
 }
 
 .container-div {
@@ -397,14 +389,21 @@ h3 span {
   display: flex;
 }
 
+.container-div:hover ~ .slide:after {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-animation: spin .5s ease-in-out;
+          animation: spin .5s ease-in-out;
+}
+
 .section {
   overflow: hidden;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.9s ease-out;
+  transition: all 0.9s ease-out;
   height: auto;
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 .section.slide {
@@ -420,6 +419,13 @@ h3 span {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.section:hover ~ .slide:after {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 .text-holder p {
@@ -448,23 +454,15 @@ h3 span {
   position: absolute;
   width: 16px;
   height: 18px;
-  display: block;
-  -webkit-animation: spin 0.8s ease-in-out;
-          animation: spin 0.8s ease-in-out;
+  display: inline-block;
 }
 
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+#footer-restaurants {
+  margin: 0px;
 }
 
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+#footer-restaurants-long {
+  margin-top: 2px;
 }
 
 @media screen and (min-width: 481px) {

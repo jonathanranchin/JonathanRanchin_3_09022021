@@ -59,3 +59,143 @@ footer {
         justify-content: space-evenly;
     }
 }
+.header-image {
+    margin: 0px;
+    width: 200px;
+    height: 65px;
+    border-bottom: 2px $darkest-indexheader-grey solid;
+    display: block;
+    padding: 0.25rem 5.45rem;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    border-radius: 0px; 
+}
+.fa-map-marker-alt {
+    margin: 20px 10px 20px -20px;
+}
+#reservation {
+    background-color: $standard-light-grey;
+    margin-left: auto;
+    margin-right: auto;   
+    text-align: center;
+    h2, 
+    p {
+        padding: 0px 20% 0px 20%;
+        margin-top: 0px;
+}
+}
+#command {
+    background-color: $standard-light-grey;
+    min-width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+#reservation button,
+#command button {
+    border-radius: 55px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: $secondary;
+    background: linear-gradient($secondary,$primary);
+    border: 0px transparent;
+    color: white;
+    box-shadow: $standard-box-shadow;
+}
+#reservation button:hover,
+#command button:hover {
+    background-color: $light-secondary;
+}
+#operations {
+    margin: 10px;
+    p {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        background-color: $standard-light-grey;
+        border-radius: 20px;
+        height: 65px;
+        width: 98%;
+        margin-left: 1%;
+        box-shadow: 0 0 5px 5px $standard-box-shadow;
+        &:hover  {
+            i {
+            transition: background-color 0.5s ease;
+            color: $primary;    
+            }
+            }
+    }
+    p:hover {
+        background-color: rgb(245, 237, 255);
+    }
+    i {
+        color: $logo-passive;
+        margin: 0px 10px 0px 0px;  
+    } 
+}
+
+.highlighted-number {
+    padding: 3px 8px 3px 8px;
+    margin: 0px 10px 0px -10px;
+    color: white;
+    border-radius: 50px;
+    background-color: $primary;
+}
+#restaurants {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center ;
+    background-color: $standard-light-grey;
+    h2 {
+        margin-left: -188px;
+    }
+    article {
+        box-shadow: 0 0 20px $standard-box-shadow;
+        background-color: white;
+        border-radius: 15px;
+        margin: 2%;
+        padding: 5px;
+        div {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+        }
+        i {
+            margin: 15px 10px 5px 0px;
+            color:  rgb(82, 82, 82);
+        }
+    }
+    i:hover {
+        opacity: 1;
+        color: $primary;
+    }
+}
+.new {
+    background-color: rgb(153, 226, 208);
+    color: rgb(30, 153, 123);
+    text-align: center;
+    width: 68px;
+    margin: -185px 0px 200px 235px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 3px;
+    p {
+        margin: 0px;
+        padding: 3px;
+    }
+}
+.fa-heart:active {
+    color: $primary;
+}
+.fa-arrow-left {
+    height: 20px;
+    width: 20px;
+    padding: 43px 10px 24px 10px;
+    z-index: 10;
+}
+
+h3 span {
+    color: transparent;
+}
