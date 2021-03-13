@@ -160,7 +160,7 @@ footer div {
 
 #reservation button:hover,
 #command button:hover {
-  background-color: #F0B7EC;
+  background: #F0B7EC;
 }
 
 #operations {
@@ -194,7 +194,7 @@ footer div {
 }
 
 #operations p:hover {
-  background-color: #f5edff;
+  background-color: #F5EDFF;
 }
 
 #operations i {
@@ -261,8 +261,8 @@ footer div {
 }
 
 .new {
-  background-color: #99e2d0;
-  color: #1e997b;
+  background-color: #99E2D0;
+  color: #1E997B;
   text-align: center;
   width: 68px;
   margin: -185px 0px 200px 235px;
@@ -308,7 +308,7 @@ h3 span {
   margin-top: -4rem;
   border-radius: 2rem 2rem 0 0;
   padding: 0.5rem;
-  background-color: #f6f6f6;
+  background-color: #F6F6F6;
   z-index: 1;
 }
 
@@ -394,6 +394,65 @@ h3 span {
           transform: rotate(360deg);
   -webkit-animation: spin .5s ease-in-out;
           animation: spin .5s ease-in-out;
+}
+
+.menu-title {
+  -webkit-animation: 0.5s ease-out 0s 1 item-pop;
+          animation: 0.5s ease-out 0s 1 item-pop;
+}
+
+.menu-one {
+  -webkit-animation: 0.5s ease-out 0.5s 1 item-pop;
+          animation: 0.5s ease-out 0.5s 1 item-pop;
+}
+
+.menu-two {
+  -webkit-animation: 0.5s ease-out 1s 1 item-pop;
+          animation: 0.5s ease-out 1s 1 item-pop;
+}
+
+.menu-three {
+  -webkit-animation: 0.5s ease-out 1.5s 1 item-pop;
+          animation: 0.5s ease-out 1.5s 1 item-pop;
+}
+
+.menu-four {
+  -webkit-animation: 0.5s ease-out 2s 1 item-pop;
+          animation: 0.5s ease-out 2s 1 item-pop;
+}
+
+@-webkit-keyframes item-pop {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  50% {
+    -webkit-transform: scale(Y0 0.5);
+            transform: scale(Y0 0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes item-pop {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  50% {
+    -webkit-transform: scale(Y0 0.5);
+            transform: scale(Y0 0.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
 }
 
 .section {
