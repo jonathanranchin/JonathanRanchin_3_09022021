@@ -29,6 +29,11 @@ img {
     height: 200px;
     object-fit: cover;
 }
+@media screen and (min-width: 481px) {
+    header div {
+        height: 50px;
+    }
+}
 h3, 
 h4 {
     margin: 2px;
@@ -36,7 +41,7 @@ h4 {
 a {
     text-decoration: none;
     color: inherit;
-  }
+}
 footer {
     margin-top: 5.7%;
     background-color: $footer-background-color;
@@ -135,6 +140,21 @@ footer {
         margin: 0px 10px 0px 0px;  
     } 
 }
+@media screen and (min-width: 481px) {
+    #operations {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: baseline;
+        justify-content: space-around;
+        h2 {
+            margin-right: 15px; 
+        }
+        p {
+            width: 280px;
+            margin-right: 15px; 
+        }
+    }
+}
 .highlighted-number {
     padding: 3px 8px 3px 8px;
     margin: 0px 10px 0px -10px;
@@ -171,7 +191,10 @@ footer {
     }
     .logo-holder:hover {
         .fas {
-            color:  #b35cdc ;
+            background: -webkit-gradient(linear, left top, left bottom, from($primary), to($secondary));
+            background-clip: inherit;
+	        -webkit-background-clip: text;
+	        -webkit-text-fill-color: transparent;
             background-color: white;
             animation: 5s ease 1 heart-hover;
         }
@@ -201,6 +224,17 @@ footer {
         padding: 3px;
     }
 }
+@media screen and (min-width: 481px) {
+    #restaurants {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        h2 {
+            width: 100%;
+            margin-left: 27px;
+        }
+    } 
+}
 .fa-arrow-left {
     height: 20px;
     width: 20px;
@@ -209,4 +243,17 @@ footer {
 }
 h3 span {
     color: transparent;
+}
+@media screen and (min-width: 481px) {         
+    footer {
+        img {
+            width: 100px;
+            height: 25px;
+            margin-bottom: -8px;
+        }
+        div {
+            margin: 10px 20px 20px 20px;
+        }
+    }
+    
 }

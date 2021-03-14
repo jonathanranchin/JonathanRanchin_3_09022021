@@ -145,3 +145,26 @@
 #footer-restaurants-long {
     margin-top: 2px;
 }
+@media screen and (min-width: 481px) {
+    #header-image-restaurants {
+        margin: -74px auto 2px auto;
+    }
+    #top-image {
+        object-fit: cover;
+        height:400px
+    }
+    #restaurants-section {
+        display: flex;
+        flex-flow: row wrap;
+        h2 {
+            width: 100%;
+        }
+        section {
+            width: 31%;
+            margin: 0.75%;
+        }
+    }
+    #footer-restaurants-long {
+        margin-top: -14px;
+    }
+}
