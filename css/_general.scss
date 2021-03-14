@@ -106,7 +106,7 @@ footer {
 }
 #reservation button:hover,
 #command button:hover {
-    background: ($light-secondary,);
+    background: ($light-secondary);
 }
 #operations {
     margin: 10px;
@@ -166,10 +166,26 @@ footer {
             color:  $logo-dark;
         }
     }
-    i:hover {
-        opacity: 1;
-        color: $primary;
+    .fas {
+        color: transparent;
     }
+    .logo-holder:hover {
+        .fas {
+            color:  #b35cdc ;
+            background-color: white;
+            animation: 5s ease 1 heart-hover;
+        }
+        .far {
+            width: 0px;
+            height: 0px;
+            margin: 0px;
+            color: transparent;
+        }
+    }
+    
+}
+@keyframes heart-hover {
+    to {transform: scale(1.5);}
 }
 .new {
     background-color: $tertiary;
@@ -185,16 +201,12 @@ footer {
         padding: 3px;
     }
 }
-.fa-heart:active {
-    color: $primary;
-}
 .fa-arrow-left {
     height: 20px;
     width: 20px;
     padding: 43px 10px 24px 10px;
     z-index: 10;
 }
-
 h3 span {
     color: transparent;
 }

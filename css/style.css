@@ -255,9 +255,36 @@ footer div {
   color: #525252;
 }
 
-#restaurants i:hover {
-  opacity: 1;
-  color: #9356DC;
+#restaurants .fas {
+  color: transparent;
+}
+
+#restaurants .logo-holder:hover .fas {
+  color: #b35cdc;
+  background-color: white;
+  -webkit-animation: 5s ease 1 heart-hover;
+          animation: 5s ease 1 heart-hover;
+}
+
+#restaurants .logo-holder:hover .far {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  color: transparent;
+}
+
+@-webkit-keyframes heart-hover {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes heart-hover {
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
 }
 
 .new {
@@ -274,10 +301,6 @@ footer div {
 .new p {
   margin: 0px;
   padding: 3px;
-}
-
-.fa-heart:active {
-  color: #9356DC;
 }
 
 .fa-arrow-left {
