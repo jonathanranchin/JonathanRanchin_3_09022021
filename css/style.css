@@ -377,6 +377,148 @@ h3 span {
   }
 }
 
+.loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: nowrap row;
+          flex-flow: nowrap row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 99;
+  background-color: #D7D7D7;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+  -webkit-animation: 2.5s ease 0s 1 hidder;
+          animation: 2.5s ease 0s 1 hidder;
+}
+
+.bar {
+  width: 1.25em;
+  -webkit-animation: 0.9s ease-in-out 0s 2 loader-animation;
+          animation: 0.9s ease-in-out 0s 2 loader-animation;
+}
+
+#bar-1 {
+  background-color: #9356DC;
+}
+
+#bar-2 {
+  background-color: #FF79DA;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+#bar-3 {
+  background-color: #99E2D0;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+@-webkit-keyframes loader-animation {
+  0% {
+    height: 22em;
+  }
+  12% {
+    height: 19em;
+  }
+  25% {
+    height: 16em;
+  }
+  37% {
+    height: 19em;
+  }
+  50% {
+    height: 22em;
+  }
+  62% {
+    height: 25em;
+  }
+  75% {
+    height: 28em;
+  }
+  87% {
+    height: 25em;
+  }
+  100% {
+    height: 22em;
+  }
+}
+
+@keyframes loader-animation {
+  0% {
+    height: 22em;
+  }
+  12% {
+    height: 19em;
+  }
+  25% {
+    height: 16em;
+  }
+  37% {
+    height: 19em;
+  }
+  50% {
+    height: 22em;
+  }
+  62% {
+    height: 25em;
+  }
+  75% {
+    height: 28em;
+  }
+  87% {
+    height: 25em;
+  }
+  100% {
+    height: 22em;
+  }
+}
+
+@-webkit-keyframes hidder {
+  0% {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 28em;
+    opacity: 1;
+  }
+  100% {
+    position: relative;
+    width: 0%;
+    height: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes hidder {
+  0% {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 28em;
+    opacity: 1;
+  }
+  100% {
+    position: relative;
+    width: 0%;
+    height: 0px;
+    opacity: 0;
+  }
+}
+
 #header-image-restaurants {
   z-index: -1;
   margin: -75px 0px 0px 0px;
@@ -417,8 +559,29 @@ h3 span {
           justify-content: space-between;
 }
 
-#restaurants-section h2 i {
-  margin: 0px 8px 0px 0px;
+#restaurants-section h2 span {
+  margin-right: 45px;
+}
+
+#restaurants-section h2 .fas {
+  color: transparent;
+}
+
+#restaurants-section h2 .logo-holder:hover .fas {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: white;
+  -webkit-animation: 5s ease 1 heart-hover-restaurants;
+          animation: 5s ease 1 heart-hover-restaurants;
+}
+
+#restaurants-section h2 .logo-holder:hover .far {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+  color: transparent;
 }
 
 #restaurants-section .container-div {
@@ -637,6 +800,20 @@ h3 span {
   }
   #footer-restaurants-long {
     margin-top: -14px;
+  }
+}
+
+@-webkit-keyframes heart-hover-restaurants {
+  to {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+}
+
+@keyframes heart-hover-restaurants {
+  to {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
   }
 }
 /*# sourceMappingURL=style.css.map */

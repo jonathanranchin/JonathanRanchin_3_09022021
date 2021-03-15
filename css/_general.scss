@@ -88,7 +88,7 @@ footer {
     p {
         padding: 0px 20% 0px 20%;
         margin-top: 0px;
-}
+    }
 }
 #command {
     background-color: $standard-light-grey;
@@ -205,7 +205,6 @@ footer {
             color: transparent;
         }
     }
-    
 }
 @keyframes heart-hover {
     to {transform: scale(1.5);}
@@ -256,4 +255,61 @@ h3 span {
         }
     }
     
+}
+.loader {
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    z-index: 99;
+    background-color: #D7D7D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 2.5s ease 0s 1 hidder;
+}
+.bar {
+    width: 1.25em;
+    animation: 0.9s ease-in-out 0s 2 loader-animation;
+}
+#bar-1  {
+  background-color: $primary;
+}
+#bar-2  {
+  background-color: $secondary;
+  animation-delay: 0.25s;
+}
+#bar-3  {
+  background-color: $tertiary;
+  animation-delay: 0.5s;
+}
+@keyframes loader-animation {
+    0% {height: 22em}
+    12% {height: 19em}
+    25% {height: 16em}
+    37% {height: 19em}
+    50% {height: 22em}
+    62% {height: 25em}
+    75% {height: 28em}
+    87% {height: 25em}
+    100% {height: 22em}
+}
+@keyframes hidder {
+  0% {
+    position:fixed;
+    padding:0;
+    margin:0;
+
+    top:0;
+    left:0;
+
+    width: 100%;
+    min-height: 28em;
+      opacity: 1
+  }
+  100% {
+        position: relative;
+        width:0%;
+        height:0px;
+        opacity:0
+  }
 }

@@ -24,9 +24,29 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
-    }
-    h2 i {
-        margin: 0px 8px 0px 0px;
+        span  {
+            margin-right: 45px;
+        }
+        .fas {
+            color: transparent;
+        }
+        .logo-holder:hover {
+            .fas {
+                background: -webkit-gradient(linear, left top, left bottom, from($primary), to($secondary));
+                background-clip: inherit;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-color: white;
+                animation: 5s ease 1 heart-hover-restaurants;
+            }
+            
+            .far {
+                width: 0px;
+                height: 0px;
+                margin: 0px;
+                color: transparent;
+            }
+        }
     }
     .container-div {
         background-color: white;
@@ -167,4 +187,7 @@
     #footer-restaurants-long {
         margin-top: -14px;
     }
+}
+@keyframes heart-hover-restaurants {
+    to {transform: scale(1.15)}
 }
