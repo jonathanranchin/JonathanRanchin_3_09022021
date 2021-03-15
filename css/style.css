@@ -160,8 +160,8 @@ footer div {
   background: linear-gradient(#FF79DA, #9356DC);
   border: 0px transparent;
   color: white;
-  -webkit-box-shadow: #0000002e;
-          box-shadow: #0000002e;
+  -webkit-box-shadow: 5px 5px 5px #0000002E;
+          box-shadow: 5px 5px 5px #0000002E;
 }
 
 #reservation button:hover,
@@ -189,8 +189,8 @@ footer div {
   height: 65px;
   width: 98%;
   margin-left: 1%;
-  -webkit-box-shadow: 0 0 5px 5px #0000002e;
-          box-shadow: 0 0 5px 5px #0000002e;
+  -webkit-box-shadow: 0 0 5px 5px #0000002E;
+          box-shadow: 0 0 5px 5px #0000002E;
 }
 
 #operations p:hover i {
@@ -259,15 +259,15 @@ footer div {
 }
 
 #restaurants article {
-  -webkit-box-shadow: 0 0 20px #0000002e;
-          box-shadow: 0 0 20px #0000002e;
+  -webkit-box-shadow: 0 0 20px #0000002E;
+          box-shadow: 0 0 20px #0000002E;
   background-color: white;
   border-radius: 15px;
   margin: 2%;
   padding: 5px;
 }
 
-#restaurants article div {
+#restaurants article .txt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,8 +489,12 @@ h3 span {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 28em;
+    min-height: 40em;
     opacity: 1;
+  }
+  99% {
+    width: 100%;
+    min-height: 28em;
   }
   100% {
     position: relative;
@@ -508,8 +512,12 @@ h3 span {
     top: 0;
     left: 0;
     width: 100%;
-    min-height: 28em;
+    min-height: 40em;
     opacity: 1;
+  }
+  99% {
+    width: 100%;
+    min-height: 28em;
   }
   100% {
     position: relative;
@@ -586,8 +594,8 @@ h3 span {
 
 #restaurants-section .container-div {
   background-color: white;
-  -webkit-box-shadow: 0 0 20px #0000002e;
-          box-shadow: 0 0 20px #0000002e;
+  -webkit-box-shadow: 0 0 20px #0000002E;
+          box-shadow: 0 0 20px #0000002E;
   border-radius: .75rem;
   height: 60px;
   margin: 1rem 0;
@@ -678,8 +686,8 @@ h3 span {
             transform-origin: top;
   }
   50% {
-    -webkit-transform: scale(Y0 0.5);
-            transform: scale(Y0 0.5);
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
   }
   100% {
     -webkit-transform: scaleY(1);
@@ -695,8 +703,8 @@ h3 span {
             transform-origin: top;
   }
   50% {
-    -webkit-transform: scale(Y0 0.5);
-            transform: scale(Y0 0.5);
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
   }
   100% {
     -webkit-transform: scaleY(1);
