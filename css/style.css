@@ -40,6 +40,12 @@ header div {
   background-color: #EAEAEA;
 }
 
+@media screen and (min-width: 481px) {
+  header div {
+    height: 50px;
+  }
+}
+
 img {
   margin: -4px;
   border-radius: 15px;
@@ -47,12 +53,6 @@ img {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-@media screen and (min-width: 481px) {
-  header div {
-    height: 50px;
-  }
 }
 
 h3,
@@ -79,9 +79,23 @@ footer img {
   height: 20px;
 }
 
+@media screen and (min-width: 481px) {
+  footer img {
+    width: 100px;
+    height: 25px;
+    margin-bottom: -8px;
+  }
+}
+
 footer div {
   margin: 10px 0px 10px 20px;
   color: white;
+}
+
+@media screen and (min-width: 481px) {
+  footer div {
+    margin: 10px 20px 20px 20px;
+  }
 }
 
 @media screen and (min-width: 481px) {
@@ -173,6 +187,12 @@ footer div {
   margin: 10px;
 }
 
+@media screen and (min-width: 481px) {
+  #operations h2 {
+    margin-right: 15px;
+  }
+}
+
 #operations p {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,14 +209,21 @@ footer div {
   height: 65px;
   width: 98%;
   margin-left: 1%;
-  -webkit-box-shadow: 0 0 5px 5px #0000002E;
-          box-shadow: 0 0 5px 5px #0000002E;
+  -webkit-box-shadow: 5px 5px 10px 0px #0000002E;
+          box-shadow: 5px 5px 10px 0px #0000002E;
 }
 
 #operations p:hover i {
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
   color: #9356DC;
+}
+
+@media screen and (min-width: 481px) {
+  #operations p {
+    width: 280px;
+    margin-right: 15px;
+  }
 }
 
 #operations p:hover {
@@ -223,13 +250,6 @@ footer div {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  #operations h2 {
-    margin-right: 15px;
-  }
-  #operations p {
-    width: 280px;
-    margin-right: 15px;
-  }
 }
 
 .highlighted-number {
@@ -254,8 +274,30 @@ footer div {
   background-color: #F6F6F6;
 }
 
+@media screen and (min-width: 481px) {
+  #restaurants {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 #restaurants h2 {
   margin-left: -188px;
+}
+
+@media screen and (min-width: 481px) {
+  #restaurants h2 {
+    width: 100%;
+    margin-left: 27px;
+  }
 }
 
 #restaurants article {
@@ -336,25 +378,6 @@ footer div {
   padding: 3px;
 }
 
-@media screen and (min-width: 481px) {
-  #restaurants {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  #restaurants h2 {
-    width: 100%;
-    margin-left: 27px;
-  }
-}
-
 .fa-arrow-left {
   height: 20px;
   width: 20px;
@@ -364,17 +387,6 @@ footer div {
 
 h3 span {
   color: transparent;
-}
-
-@media screen and (min-width: 481px) {
-  footer img {
-    width: 100px;
-    height: 25px;
-    margin-bottom: -8px;
-  }
-  footer div {
-    margin: 10px 20px 20px 20px;
-  }
 }
 
 .loader {
@@ -533,11 +545,25 @@ h3 span {
   border-bottom: transparent;
 }
 
+@media screen and (min-width: 481px) {
+  #header-image-restaurants {
+    margin: -74px auto 2px auto;
+  }
+}
+
 #top-image {
   border-radius: 0px;
   width: 100%;
   height: 250px;
   margin: -2px 0px 0px 0px;
+}
+
+@media screen and (min-width: 481px) {
+  #top-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+  }
 }
 
 #restaurants-section {
@@ -546,6 +572,25 @@ h3 span {
   padding: 0.5rem;
   background-color: #F6F6F6;
   z-index: 1;
+}
+
+@media screen and (min-width: 481px) {
+  #restaurants-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #restaurants-section section {
+    width: 31%;
+    margin: 0.75%;
+  }
 }
 
 #restaurants-section section:hover {
@@ -565,6 +610,12 @@ h3 span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (min-width: 481px) {
+  #restaurants-section h2 {
+    width: 100%;
+  }
 }
 
 #restaurants-section h2 span {
@@ -649,8 +700,8 @@ h3 span {
 .container-div:hover ~ .slide:after {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-animation: spin .5s ease-in-out;
-          animation: spin .5s ease-in-out;
+  -webkit-animation: spin .5s 0.3s ease-in-out;
+          animation: spin .5s 0.3s ease-in-out;
 }
 
 .menu-title {
@@ -782,30 +833,6 @@ h3 span {
 }
 
 @media screen and (min-width: 481px) {
-  #header-image-restaurants {
-    margin: -74px auto 2px auto;
-  }
-  #top-image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 400px;
-  }
-  #restaurants-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-  #restaurants-section h2 {
-    width: 100%;
-  }
-  #restaurants-section section {
-    width: 31%;
-    margin: 0.75%;
-  }
   #footer-restaurants-long {
     margin-top: -14px;
   }
