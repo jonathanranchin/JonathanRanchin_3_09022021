@@ -95,6 +95,9 @@ footer {
         padding: 0px 20% 0px 20%;
         margin-top: 0px;
     }
+    h2 {
+        padding-top: 12px;
+    }
 }
 #command {
     background-color: $standard-light-grey;
@@ -113,7 +116,7 @@ footer {
     background: linear-gradient($secondary,$primary);
     border: 0px transparent;
     color: white;
-    box-shadow: 5px 5px 5px $standard-box-shadow;
+    box-shadow: 4px 4px 2px $light-box-shadow;
 }
 #reservation button:hover,
 #command button:hover {
@@ -135,7 +138,7 @@ footer {
         height: 65px;
         width: 98%;
         margin-left: 1%;
-        box-shadow: 5px 5px 10px 0px $standard-box-shadow;
+        box-shadow: 5px 5px 10px 0px $dark-box-shadow;
         &:hover  {
             i {
                 transition: background-color 0.5s ease;
@@ -181,14 +184,13 @@ footer {
     }
     h2 {
         margin-left: -188px;
-        @media screen and (min-width: 481px) {
-        
+        @media screen and (min-width: 481px) {   
             width: 100%;
             margin-left: 27px;
         }
     }
     article {
-        box-shadow: 0 0 20px $standard-box-shadow;
+        box-shadow: 0 0 20px $dark-box-shadow;
         background-color: white;
         border-radius: 15px;
         margin: 2%;
@@ -258,7 +260,7 @@ h3 span {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: 2.5s ease 0s 1 hidder;
+    animation: 2.3s ease 0s 1 hidder;
 }
 .bar {
     width: 1.25em;

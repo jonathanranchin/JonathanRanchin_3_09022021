@@ -45,7 +45,10 @@
             width: 100%;
         }
         span  {
+            margin-right: 5px;
+            @media screen and (min-width: 481px) {
             margin-right: 45px;
+            }
         }
         .fas {
             color: transparent;
@@ -70,7 +73,7 @@
     }
     .container-div {
         background-color: white;
-        box-shadow: 0 0 20px $standard-box-shadow;
+        box-shadow: 0 0 20px $dark-box-shadow;
         border-radius: .75rem;
         height: 60px;
         margin: 1rem 0;
@@ -88,8 +91,10 @@
         height: 22px;
         border-bottom: 2px solid $tertiary;
     }
-    #text {
-        width: 0px;
+    .text {
+        white-space: nowrap;
+        overflow: hidden; 
+        text-overflow: ellipsis;
     }
     p {
         margin: 3px;

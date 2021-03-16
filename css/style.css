@@ -148,6 +148,10 @@ footer div {
   margin-top: 0px;
 }
 
+#reservation h2 {
+  padding-top: 12px;
+}
+
 #command {
   background-color: #F6F6F6;
   min-width: 100%;
@@ -174,8 +178,8 @@ footer div {
   background: linear-gradient(#FF79DA, #9356DC);
   border: 0px transparent;
   color: white;
-  -webkit-box-shadow: 5px 5px 5px #0000002E;
-          box-shadow: 5px 5px 5px #0000002E;
+  -webkit-box-shadow: 4px 4px 2px #E9E9E9;
+          box-shadow: 4px 4px 2px #E9E9E9;
 }
 
 #reservation button:hover,
@@ -407,8 +411,8 @@ h3 span {
       -ms-flex-pack: center;
           justify-content: center;
   align-items: center;
-  -webkit-animation: 2.5s ease 0s 1 hidder;
-          animation: 2.5s ease 0s 1 hidder;
+  -webkit-animation: 2.3s ease 0s 1 hidder;
+          animation: 2.3s ease 0s 1 hidder;
 }
 
 .bar {
@@ -619,7 +623,13 @@ h3 span {
 }
 
 #restaurants-section h2 span {
-  margin-right: 45px;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 481px) {
+  #restaurants-section h2 span {
+    margin-right: 45px;
+  }
 }
 
 #restaurants-section h2 .fas {
@@ -675,8 +685,10 @@ h3 span {
   border-bottom: 2px solid #99E2D0;
 }
 
-#restaurants-section #text {
-  width: 0px;
+#restaurants-section .text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #restaurants-section p {
