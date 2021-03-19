@@ -58,6 +58,7 @@ footer {
     div {
         margin: 10px 0px 10px 20px;
         color: white;
+        cursor: pointer;
         @media screen and (min-width: 481px) {         
             margin: 10px 20px 20px 20px;
         }
@@ -120,6 +121,7 @@ footer {
 }
 #reservation button:hover,
 #command button:hover {
+    cursor: pointer;
     background: ($light-secondary);
 }
 #operations {
@@ -142,6 +144,7 @@ footer {
         &:hover  {
             i {
                 transition: background-color 0.5s ease;
+                cursor: pointer;
                 color: $primary;    
                 }
             }
@@ -153,6 +156,7 @@ footer {
     }
     p:hover {
         background-color: $operations-hover;
+        cursor: pointer;
     }
     i {
         color: $logo-passive;
@@ -216,6 +220,7 @@ footer {
 	        -webkit-text-fill-color: transparent;
             background-color: white;
             animation: 5s ease 1 heart-hover;
+            cursor: pointer;
         }
         .far {
             width: 0px;

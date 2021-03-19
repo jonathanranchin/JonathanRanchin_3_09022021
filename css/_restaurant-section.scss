@@ -41,6 +41,7 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
+        margin: 2rem 0px 0.25rem 0px;
         @media screen and (min-width: 481px) {    
             width: 100%;
         }
@@ -51,7 +52,14 @@
             }
         }
         .fas {
+            width: 0px;
+            height: 0px;
+            margin: 0px;
             color: transparent;
+        }
+        .logo-holder {
+            width : 32.75px;
+            height: 93.333px;
         }
         .logo-holder:hover {
             .fas {
@@ -61,6 +69,9 @@
                 -webkit-text-fill-color: transparent;
                 background-color: white;
                 animation: 5s ease 1 heart-hover-restaurants;
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
             }
             
             .far {
@@ -77,6 +88,7 @@
         border-radius: .75rem;
         height: 60px;
         margin: 1rem 0;
+        cursor: pointer;
     }
     .text-holder {
         padding: 8px 3px 3px 4px;

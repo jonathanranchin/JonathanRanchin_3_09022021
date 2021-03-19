@@ -90,6 +90,7 @@ footer img {
 footer div {
   margin: 10px 0px 10px 20px;
   color: white;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 481px) {
@@ -184,6 +185,7 @@ footer div {
 
 #reservation button:hover,
 #command button:hover {
+  cursor: pointer;
   background: #F0B7EC;
 }
 
@@ -220,6 +222,7 @@ footer div {
 #operations p:hover i {
   -webkit-transition: background-color 0.5s ease;
   transition: background-color 0.5s ease;
+  cursor: pointer;
   color: #9356DC;
 }
 
@@ -232,6 +235,7 @@ footer div {
 
 #operations p:hover {
   background-color: #F5EDFF;
+  cursor: pointer;
 }
 
 #operations i {
@@ -343,6 +347,7 @@ footer div {
   background-color: white;
   -webkit-animation: 5s ease 1 heart-hover;
           animation: 5s ease 1 heart-hover;
+  cursor: pointer;
 }
 
 #restaurants .logo-holder:hover .far {
@@ -614,6 +619,7 @@ h3 span {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 2rem 0px 0.25rem 0px;
 }
 
 @media screen and (min-width: 481px) {
@@ -633,7 +639,15 @@ h3 span {
 }
 
 #restaurants-section h2 .fas {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
   color: transparent;
+}
+
+#restaurants-section h2 .logo-holder {
+  width: 32.75px;
+  height: 93.333px;
 }
 
 #restaurants-section h2 .logo-holder:hover .fas {
@@ -644,6 +658,9 @@ h3 span {
   background-color: white;
   -webkit-animation: 5s ease 1 heart-hover-restaurants;
           animation: 5s ease 1 heart-hover-restaurants;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
 }
 
 #restaurants-section h2 .logo-holder:hover .far {
@@ -660,6 +677,7 @@ h3 span {
   border-radius: .75rem;
   height: 60px;
   margin: 1rem 0;
+  cursor: pointer;
 }
 
 #restaurants-section .text-holder {
