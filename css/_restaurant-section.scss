@@ -27,6 +27,13 @@
         flex-flow: row wrap;
     }
     @media screen and (min-width: 481px) {
+        justify-content: center;
+        section {
+            width: 47%;
+            margin: 0.75%;
+        }
+    }
+    @media screen and (min-width: 769px) {
         section {
             width: 31%;
             margin: 0.75%;

@@ -607,6 +607,18 @@ h3 span {
 }
 
 @media screen and (min-width: 481px) {
+  #restaurants-section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #restaurants-section section {
+    width: 47%;
+    margin: 0.75%;
+  }
+}
+
+@media screen and (min-width: 769px) {
   #restaurants-section section {
     width: 31%;
     margin: 0.75%;
