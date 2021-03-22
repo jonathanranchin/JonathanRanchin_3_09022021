@@ -421,6 +421,7 @@ h3 span {
 }
 
 .bar {
+  border-radius: 50px;
   width: 1.25em;
   -webkit-animation: 0.9s ease-in-out 0s 2 loader-animation;
           animation: 0.9s ease-in-out 0s 2 loader-animation;
@@ -445,6 +446,8 @@ h3 span {
 @-webkit-keyframes loader-animation {
   0% {
     height: 22em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   12% {
     height: 19em;
@@ -469,12 +472,16 @@ h3 span {
   }
   100% {
     height: 22em;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
 @keyframes loader-animation {
   0% {
     height: 22em;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   12% {
     height: 19em;
@@ -499,6 +506,8 @@ h3 span {
   }
   100% {
     height: 22em;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 

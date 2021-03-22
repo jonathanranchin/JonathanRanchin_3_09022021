@@ -268,6 +268,7 @@ h3 span {
     animation: 2.3s ease 0s 1 hidder;
 }
 .bar {
+    border-radius: 50px;
     width: 1.25em;
     animation: 0.9s ease-in-out 0s 2 loader-animation;
 }
@@ -283,7 +284,8 @@ h3 span {
   animation-delay: 0.5s;
 }
 @keyframes loader-animation {
-    0% {height: 22em}
+    0% {height: 22em;
+        transform: rotate(0deg)}
     12% {height: 19em}
     25% {height: 16em}
     37% {height: 19em}
@@ -291,7 +293,8 @@ h3 span {
     62% {height: 25em}
     75% {height: 28em}
     87% {height: 25em}
-    100% {height: 22em}
+    100% {height: 22em;
+        transform: rotate(360deg)}
 }
 @keyframes hidder {
     0% {
